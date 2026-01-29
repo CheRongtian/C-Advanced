@@ -1,0 +1,7 @@
+*.dSYM/
+*.out
+a.out
+gsl-1.16/
+build/
+a.out.dSYM/
+*.gz
