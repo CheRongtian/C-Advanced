@@ -8,6 +8,8 @@ RUN apt-get update && apt-get install -y \
     pkg-config \
     clang \
     lldb \
+    gdb \
+    libxml2-dev \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /tmp
@@ -24,3 +26,11 @@ WORKDIR /app
 
 ENV CC=clang
 ENV CXX=clang++
+
+RUN echo "define pxml" > /root/.gdbinit && \
+    echo "    p xmlElemDump(stdout, \$arg0, xmlDocGetRootElement(\$arg0))" >> /root/.gdbinit && \
+    echo "end" >> /root/.gdbinit && \
+    echo "document pxml" >> /root/.gdbinit && \
+    echo "    Print the tree of an already opened XML document." >> /root/.gdbinit && \
+    echo "end" >> /root/.gdbinit && \
+    echo "set auto-load safe-path /" >> /root/.gdbinit

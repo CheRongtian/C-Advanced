@@ -9,7 +9,7 @@ lldb stddev_bugged
 (lldb) bt #backtrace
 (lldb) f 1 #check frame1
 (lldb) p *(double(*)[7])d #start from d, print next 7 value as an array
-(lldb) down #run next line of code
+(lldb) down #switch to the older stack
 (lldb) thread list #list of threads
 (lldb) b 16 #set a breakpoint in the loop
 (lldb) breakpoint list #list of breakpoints
