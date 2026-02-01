@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
     lldb \
     gdb \
     libxml2-dev \
+    libglib2.0-dev \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /tmp
