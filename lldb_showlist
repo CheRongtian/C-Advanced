@@ -1,0 +1,2 @@
+command regex phead 's/(.+) (.+)/expr -- GList *$ptr = (GList *)%2; (%1 *)$ptr->data/'
+command regex pnext 's/(.+)/expr -- $ptr = ((GList *)$ptr)->next; (%1 *)$ptr->data/'
