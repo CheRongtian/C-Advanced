@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     clang \
     lldb \
     gdb \
+    valgrind \
     libxml2-dev \
     libglib2.0-dev \
     && rm -rf /var/lib/apt/lists/*
