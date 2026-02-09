@@ -5,3 +5,7 @@ gsl-1.16/
 build/
 a.out.dSYM/
 *.gz
+*.gcda
+*.gcno
+*.gcov
+*.o
