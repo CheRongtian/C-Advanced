@@ -97,7 +97,7 @@ more are been recorded in the ```.sh``` files
     .
     ├── Dockerfile       # Environment definition (Ubuntu + Clang + GSL)
     ├── .gitignore       # Git ignore rules
-    ├── codes            # Source code (exercises and experiments)
+    ├── src/             # Source code (exercises and experiments)
     └── README.md        # Documentation
 
 ## 📚 References

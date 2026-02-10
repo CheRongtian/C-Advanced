@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
     valgrind \
     libxml2-dev \
     libglib2.0-dev \
+    bc \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /tmp
