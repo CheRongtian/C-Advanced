@@ -1,4 +1,6 @@
 #!/bin/bash
+shopt -s expand_aliases
+rm -f a.out
 go_libs="-lm"
 go_flags="-g -Wall -include allheads.h -O3"
 alias go_c="clang -xc - $go_libs $go_flags"

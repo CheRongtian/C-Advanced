@@ -22,7 +22,7 @@ docker build -t c-learning-env .
 ### 2. Enter the Container
 Mount the current directory to `/app` inside the container. This allows you to edit code in your local IDE (like VS Code) while compiling and running it inside the container.
 ```bash
-# MacOS / Linux
+# Linux
 docker build -t advanced-c-env . # create the docker image
 docker run --privileged -it -v $(pwd):/app advanced-c-env /bin/bash # run the image
 ```

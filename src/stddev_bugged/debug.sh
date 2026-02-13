@@ -1,5 +1,5 @@
 #!/bin/bash
-clang -isysroot $(xcrun --show-sdk-path) -g -Wall stddev_bugged.c -lm -o stddev_bugged
+clang  -g -Wall stddev_bugged.c -lm -o stddev_bugged
 lldb stddev_bugged
 
 :<<END

@@ -1,7 +1,7 @@
 #!/bin/bash
-clang -g -gdwarf-4 -Wall stddev_bugged.c -lm -o stddev_bugged_docker
+clang -g -gdwarf-4 -Wall ../stddev_bugged/stddev_bugged.c -lm -o ../stddev_bugged/stddev_bugged_docker
 # compile the file in docker environment
-valgrind --vgdb-error=0 ./stddev_bugged_docker
+valgrind --vgdb-error=0 ../stddev_bugged/stddev_bugged_docker
 
 
 # use another terminal

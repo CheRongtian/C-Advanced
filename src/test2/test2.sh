@@ -1,5 +1,5 @@
 #!/bin/bash
-clang -isysroot $(xcrun --show-sdk-path) -O0 -g test2.c -o test2
+clang -O0 -g test2.c -o test2
 lldb test2
 :<<END
 (lldb) b main

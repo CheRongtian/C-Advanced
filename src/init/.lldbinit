@@ -1,1 +1,1 @@
-command regex pxml 's/(.+)/expr -- (void)xmlElemDump((void *)__stdoutp, %1, (void *)xmlDocGetRootElement(%1))/'
+command regex pxml 's/(.+)/expr -- (void)xmlElemDump(stdout, %1, (void *)xmlDocGetRootElement(%1))/'

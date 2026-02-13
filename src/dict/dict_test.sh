@@ -1,5 +1,5 @@
 #!/bin/bash
-clang -g -o dict_test dict_test.c dict.c keyval.c $(pkg-config --cflags --libs glib-2.0) -isysroot $(xcrun --show-sdk-path)
+clang -g -o dict_test dict_test.c dict.c keyval.c $(pkg-config --cflags --libs glib-2.0)
 
 
 # for gcov.sh
