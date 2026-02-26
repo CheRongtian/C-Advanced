@@ -10,3 +10,4 @@ a.out.dSYM/
 *.gcov
 *.o
 *.bkup
+src/shell/autodemo/
