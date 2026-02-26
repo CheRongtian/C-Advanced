@@ -14,6 +14,8 @@ RUN apt-get update && apt-get install -y \
     libxml2-dev \
     libglib2.0-dev \
     bc \
+    autoconf \
+    automake \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /tmp
